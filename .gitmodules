@@ -1,0 +1,6 @@
+[submodule "tmux"]
+	path = tmux
+	url = git@github.com:khsoh/tmuxconf.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:khsoh/kickstart.nvim
