@@ -11,7 +11,7 @@ git pull --recurse-submodules origin main
 brew bundle
 
 # Run brew diagnostics
-brew doctor || return 1
+brew doctor 2>&1
 
 # Upgrade the packages
 brew upgrade
