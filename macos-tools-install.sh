@@ -17,7 +17,7 @@ brew install git
 
 pushd ~ > /dev/null
 
-git checkout --recurse-submodules $DOTFILES_GIT && source dotfiles/bootstrap.sh
+git clone --recurse-submodules $DOTFILES_GIT && source dotfiles/bootstrap.sh
 
 popd > /dev/null
 
