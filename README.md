@@ -1,5 +1,13 @@
 # Kok Hong's dotfiles
 
+## Setting up on a fresh Mac
+
+To setup on a fresh Mac which will not have the requisite tools, you first download this script [macos-tools-install.sh](https://github.com/khsoh/dotfiles/main/macos-tools-install.sh) to your home directory.  Then source the script as follows:
+
+```
+source ~/macos-tools-install.sh
+```
+
 ## Installation
 
 Firstly, clone the repository to `~/dotfiles`
