@@ -17,7 +17,15 @@ brew install git
 
 pushd ~ > /dev/null
 
-git clone --recurse-submodules $DOTFILES_GIT && source dotfiles/bootstrap.sh
+# Connect to github first to ensure github.com is recognized as a SSH host
+ssh -T git@github.com
+
+if [ -d ~/dotfiles ]; then
+    echo ~/dotfiles already exist - will not clone dotfiles repository again
+else
+    git clone --recurse-submodules $DOTFILES_GIT && source dotfiles/bootstrap.sh
+fi
+
 
 popd > /dev/null
 
