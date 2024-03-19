@@ -6,8 +6,6 @@
 		<string>com.brew.upgrade</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/bin/bash</string>
-			<string>-c</string>
 			<string>/opt/homebrew/bin/brew</string>
 			<string>upgrade</string>
 		</array>
