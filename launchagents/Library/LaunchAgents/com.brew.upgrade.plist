@@ -13,9 +13,5 @@
 		<true/>
 		<key>StartInterval</key>
 		<integer>7200</integer>
-		<key>StandardErrorPath</key>
-		<string>/opt/homebrew/var/log/upgrade.log</string>
-		<key>StandardOutPath</key>e
-		<string>/opt/homebrew/var/log/upgrade.log</string>
 	</dict>
 </plist>
