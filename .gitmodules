@@ -3,4 +3,4 @@
 	url = git@github.com:khsoh/tmuxconf.git
 [submodule "nvim"]
 	path = nvim/.config/nvim
-	url = git@github.com:khsoh/kickstart.nvim
+	url = https://github.com/khsoh/kickstart.nvim.git
