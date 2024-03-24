@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## This script should be executed on a fresh new MacBook to install the necessary tools:
-#$ 1. Install Xcode Command Line tools
+## 1. Install Xcode Command Line tools
 ## 2. Homebrew
 ## 3. Git clone the user dotfiles
 ## Download this script then execute on the commandline as follows:
@@ -28,5 +28,4 @@ fi
 
 
 popd > /dev/null
-
 
