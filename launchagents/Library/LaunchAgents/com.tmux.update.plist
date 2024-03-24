@@ -3,16 +3,18 @@
 <plist version="1.0">
 	<dict>
 		<key>Label</key>
-		<string>com.nvim.update</string>
+		<string>com.tmux.update</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/opt/homebrew/bin/nvim</string>
-			<string>--headless</string>
-			<string>"+MasonUpdate"</string>
-			<string>"+MasonToolsUpdateSync"</string>
-			<string>"+Lazy! sync"</string>
-			<string>"+10sleep"</string>
-			<string>+qa</string>
+			<string>/bin/bash</string>
+			<string>-c</string>
+			<string>
+				for d in $HOME/.tmux/plugins/*; do
+					pushd $d
+					git pull --recurse-submodules
+					popd
+				done
+			</string>
 		</array>
 		<key>RunAtLoad</key>
 		<true/>
