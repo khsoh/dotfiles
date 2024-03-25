@@ -8,10 +8,10 @@
 		<array>
 			<string>/opt/homebrew/bin/nvim</string>
 			<string>--headless</string>
-			<string>"+MasonUpdate"</string>
-			<string>"+MasonToolsUpdateSync"</string>
-			<string>"+Lazy! sync"</string>
-			<string>"+60sleep"</string>
+			<string>+MasonUpdate</string>
+			<string>+MasonToolsUpdateSync</string>
+			<string>+Lazy! sync</string>
+			<string>+40sleep</string>
 			<string>+qa</string>
 		</array>
 		<key>RunAtLoad</key>
