@@ -11,7 +11,7 @@
 			<string>"+MasonUpdate"</string>
 			<string>"+MasonToolsUpdateSync"</string>
 			<string>"+Lazy! sync"</string>
-			<string>"+30sleep"</string>
+			<string>"+60sleep"</string>
 			<string>+qa</string>
 		</array>
 		<key>RunAtLoad</key>
