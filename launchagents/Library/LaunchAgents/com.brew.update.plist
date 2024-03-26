@@ -19,9 +19,5 @@
 			<key>SuccessfulExit</key>
 			<false/>
 		</dict>
-		<key>StandardErrorPath</key>
-		<string>$HOME/logs/brewupdate.log</string>
-		<key>StandardOutputPath</key>
-		<string>$HOME/logs/brewupdate.log</string>
 	</dict>
 </plist>

@@ -22,9 +22,5 @@
 			<key>SuccessfulExit</key>
 			<false/>
 		</dict>
-		<key>StandardErrorPath</key>
-		<string>$HOME/logs/dotfilesupdate.log</string>
-		<key>StandardOutputPath</key>
-		<string>$HOME/logs/dotfilesupdate.log</string>
 	</dict>
 </plist>

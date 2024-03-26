@@ -18,9 +18,5 @@
 			<key>SuccessfulExit</key>
 			<false/>
 		</dict>
-		<key>StandardErrorPath</key>
-		<string>$HOME/logs/nvimupdate.log</string>
-		<key>StandardOutputPath</key>
-		<string>$HOME/logs/nvimupdate.log</string>
 	</dict>
 </plist>
