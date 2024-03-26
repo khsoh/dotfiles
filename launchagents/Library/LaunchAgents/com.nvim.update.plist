@@ -11,10 +11,16 @@
 			<string>+MasonUpdate</string>
 			<string>+MasonToolsUpdateSync</string>
 			<string>+Lazy! sync</string>
-			<string>+40sleep</string>
 			<string>+qa</string>
 		</array>
-		<key>RunAtLoad</key>
-		<true/>
+		<key>KeepAlive</key>
+		<dict>
+			<key>SuccessfulExit</key>
+			<false/>
+		</dict>
+		<key>StandardErrorPath</key>
+		<string>/Users/kokhong/logs/nvimupdate.log</string>
+		<key>StandardOutputPath</key>
+		<string>/Users/kokhong/logs/nvimupdate.log</string>
 	</dict>
 </plist>
