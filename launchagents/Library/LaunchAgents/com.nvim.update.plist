@@ -19,8 +19,8 @@
 			<false/>
 		</dict>
 		<key>StandardErrorPath</key>
-		<string>/Users/kokhong/logs/nvimupdate.log</string>
+		<string>$HOME/logs/nvimupdate.log</string>
 		<key>StandardOutputPath</key>
-		<string>/Users/kokhong/logs/nvimupdate.log</string>
+		<string>$HOME/logs/nvimupdate.log</string>
 	</dict>
 </plist>

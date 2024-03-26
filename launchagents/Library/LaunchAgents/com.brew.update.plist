@@ -20,8 +20,8 @@
 			<false/>
 		</dict>
 		<key>StandardErrorPath</key>
-		<string>/Users/kokhong/logs/brewupdate.log</string>
+		<string>$HOME/logs/brewupdate.log</string>
 		<key>StandardOutputPath</key>
-		<string>/Users/kokhong/logs/brewupdate.log</string>
+		<string>$HOME/logs/brewupdate.log</string>
 	</dict>
 </plist>
