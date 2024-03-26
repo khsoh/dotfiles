@@ -16,7 +16,14 @@
 				done
 			</string>
 		</array>
-		<key>RunAtLoad</key>
-		<true/>
+		<key>KeepAlive</key>
+		<dict>
+			<key>SuccessfulExit</key>
+			<false/>
+		</dict>
+		<key>StandardErrorPath</key>
+		<string>/Users/kokhong/logs/tmuxupdate.log</string>
+		<key>StandardOutputPath</key>
+		<string>/Users/kokhong/logs/tmuxupdate.log</string>
 	</dict>
 </plist>
