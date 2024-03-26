@@ -4,6 +4,8 @@ pushd "$(dirname $0)" > /dev/null
 
 git pull --recurse-submodules origin main
 
+./setup-gitemail.sh
+
 ## Will update/install Homebrew if not present
 (brew update >/dev/null 2>&1) || (/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
 
