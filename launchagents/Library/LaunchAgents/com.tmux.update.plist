@@ -21,5 +21,9 @@
 			<key>SuccessfulExit</key>
 			<false/>
 		</dict>
+		<key>StandardErrorPath</key>
+		<string>/opt/homebrew/var/log/tmuxupdate.log</string>
+		<key>StandardOutputPath</key>
+		<string>/opt/homebrew/var/log/tmuxupdate.log</string>
 	</dict>
 </plist>
