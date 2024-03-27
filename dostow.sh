@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-source ~/.bash_profile
-
 pushd "$(dirname $0)" > /dev/null
 
 # Sets up the symlinks with stow
