@@ -19,7 +19,7 @@
 			<false/>
 		</dict>
 		<key>StandardErrorPath</key>
-		<string>/opt/homebrew/var/log/nvimupdate.log</string>
+		<string>/opt/homebrew/var/log/nvimupdateError.log</string>
 		<key>StandardOutputPath</key>
 		<string>/opt/homebrew/var/log/nvimupdate.log</string>
 	</dict>

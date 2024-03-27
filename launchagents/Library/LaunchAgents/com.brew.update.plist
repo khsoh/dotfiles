@@ -20,7 +20,7 @@
 			<false/>
 		</dict>
 		<key>StandardErrorPath</key>
-		<string>/opt/homebrew/var/log/brewupdate.log</string>
+		<string>/opt/homebrew/var/log/brewupdateError.log</string>
 		<key>StandardOutputPath</key>
 		<string>/opt/homebrew/var/log/brewupdate.log</string>
 	</dict>
