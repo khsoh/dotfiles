@@ -22,7 +22,7 @@
 			<false/>
 		</dict>
 		<key>StandardErrorPath</key>
-		<string>/opt/homebrew/var/log/dotfilesupdate.log</string>
+		<string>/opt/homebrew/var/log/dotfilesupdateError.log</string>
 		<key>StandardOutputPath</key>
 		<string>/opt/homebrew/var/log/dotfilesupdate.log</string>
 	</dict>
