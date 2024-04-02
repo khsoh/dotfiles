@@ -22,3 +22,5 @@ Next, we source the `bootstrap.sh`.  This is a shell script that was designed to
 source ~/dotfiles/bootstrap.sh
 ```
 
+Execute `git-remote-init.sh` script to setup the remote URL for the git repository.
+
