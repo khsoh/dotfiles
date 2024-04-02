@@ -4,7 +4,11 @@ pushd "$(dirname $0)" > /dev/null
 
 git pull --recurse-submodules origin main
 
+# Setup the default user email to use for comment in git operations
 ./setup-gitemail.sh
+
+# Setup the remote URLs for fetching and pushing from and to remote URL
+./git-remote-init.sh
 
 ## Will update/install Homebrew if not present
 (brew update >/dev/null 2>&1) || (/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
