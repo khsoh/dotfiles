@@ -12,8 +12,6 @@
 				/opt/homebrew/bin/brew update &amp;&amp; /opt/homebrew/bin/brew upgrade
 			</string>
 		</array>
-		<key>StartInterval</key>
-		<integer>3600</integer>
 		<key>KeepAlive</key>
 		<dict>
 			<key>SuccessfulExit</key>
