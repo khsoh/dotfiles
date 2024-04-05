@@ -12,6 +12,7 @@
 				/opt/homebrew/bin/brew update
 				/opt/homebrew/bin/brew upgrade
 				/opt/homebrew/bin/brew bundle check || /opt/homebrew/bin/brew bundle install
+				/opt/homebrew/bin/brew services info logrotate || /opt/homebrew/bin/brew services restart logrotate
 			</string>
 		</array>
 		<key>KeepAlive</key>
