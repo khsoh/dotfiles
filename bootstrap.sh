@@ -23,8 +23,9 @@ brew doctor 2>&1
 brew upgrade
 
 # Sets up the symlinks with stow
-for d in */; do
-    stow -Rt ~ ${d/\//} 2> >(grep -v "BUG in find_stowed_path" 1>&2)
-done
+. ./dostow.sh
+
+# Start logrotate service
+brew services restart logrotate
 
 popd >/dev/null
