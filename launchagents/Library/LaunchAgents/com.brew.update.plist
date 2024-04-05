@@ -9,7 +9,9 @@
 			<string>/bin/bash</string>
 			<string>-c</string>
 			<string>
-				/opt/homebrew/bin/brew update &amp;&amp; /opt/homebrew/bin/brew upgrade
+				/opt/homebrew/bin/brew update
+				/opt/homebrew/bin/brew upgrade
+				/opt/homebrew/bin/brew bundle check || /opt/homebrew/bin/brew bundle install
 			</string>
 		</array>
 		<key>KeepAlive</key>
