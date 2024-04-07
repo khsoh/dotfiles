@@ -9,15 +9,11 @@
 			<string>/bin/bash</string>
 			<string>-c</string>
 			<string>
-				if [[ -f $HOME/.tmux/plugins/tpm/scripts/update_plugin.sh ]]; then
-					$HOME/.tmux/plugins/tpm/scripts/update_plugin.sh all
-				else
-					for d in $HOME/.tmux/plugins/*; do
-						pushd $d
-						git pull --recurse-submodules
-						popd
-					done
-				fi
+				for d in $HOME/.tmux/plugins/*; do
+					pushd $d
+					git pull --recurse-submodules
+					popd
+				done
 			</string>
 		</array>
 		<key>KeepAlive</key>
