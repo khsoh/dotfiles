@@ -11,7 +11,7 @@ sudo apt-get install stow
 cp /dev/null ~/.gitconfig-email
 
 # Setup the remote URLs for fetching and pushing from and to remote URL
-./git-remote-init.sh
+echo Execute ./git-remote-init.sh if you want to support pushing changes to remote repo
 
 # Sets up the symlinks with stow
 . ./dostow.sh
