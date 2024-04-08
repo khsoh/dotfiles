@@ -12,7 +12,7 @@
 				if [ -d $HOME/github/dotfiles ]; then
 					pushd $HOME/github/dotfiles
 					git pull --recurse-submodules
-					git submodule update --init --recursive
+					git submodule update --checkout --remote --recursive
 					popd
 				fi
 			</string>
