@@ -9,7 +9,7 @@ git submodule update --checkout --remote --recursive
 sudo apt-get install stow
 
 # Setup the default user email to use for comment in git operations
-cp /dev/null ~/.gitconfig-email
+./setup-gitemail.sh
 
 # Setup the remote URLs for fetching and pushing from and to remote URL
 echo Execute ./git-remote-init.sh if you want to support pushing changes to remote repo
