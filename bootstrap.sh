@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-bootfile=$(dirname $0)/bootstrap-$(uname).sh
+declare -r SCRIPT_NAME=$(readlink -f ${BASH_SOURCE[0]})
+bootfile=$(dirname $SCRIPT_NAME)/bootstrap-$(uname).sh
 if [[ -e $bootfile ]]; then
     source $bootfile
 else

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-pushd "$(dirname $0)" > /dev/null
+SCRIPTNAME=$(readlink -f ${BASH_SOURCE[0]})
+pushd "$(dirname $SCRIPTNAME)" > /dev/null
 
 # Sets up the symlinks with stow
 stow -Rt / ROOT 2> >(grep -v "BUG in find_stowed_path" 1>&2)
