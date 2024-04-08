@@ -1,0 +1,26 @@
+[user]
+	name = K H Soh
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBUfgkqOXhnONi4FAsFfZFeqW0Bkij6c/6zJf8Il1oCX
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[include]
+	path = ~/.gitconfig-email
+[includeIf "gitdir:~/github/**"]
+	path = ~/.gitconfig-github
+

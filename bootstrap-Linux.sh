@@ -16,6 +16,7 @@ echo Execute ./git-remote-init.sh if you want to support pushing changes to remo
 
 # Sets up the symlinks with stow
 #. ./dostow.sh
+stow -Rt ~ LINUX 
 ln -s $PWD/HOME/.config/nvim $HOME/.config/nvim
 
 popd >/dev/null
