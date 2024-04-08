@@ -15,6 +15,7 @@ cp /dev/null ~/.gitconfig-email
 echo Execute ./git-remote-init.sh if you want to support pushing changes to remote repo
 
 # Sets up the symlinks with stow
-. ./dostow.sh
+#. ./dostow.sh
+ln -s $PWD/HOME/.config/nvim $HOME/.config/nvim
 
 popd >/dev/null
