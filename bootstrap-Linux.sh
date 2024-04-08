@@ -18,5 +18,6 @@ echo Execute ./git-remote-init.sh if you want to support pushing changes to remo
 #. ./dostow.sh
 stow -Rt ~ LINUX 
 ln -s $PWD/HOME/.config/nvim $HOME/.config/nvim
+ln -s $PWD/HOME/.config/tmux $HOME/.config/tmux
 
 popd >/dev/null
