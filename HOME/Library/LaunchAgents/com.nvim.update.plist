@@ -8,9 +8,9 @@
 		<array>
 			<string>/opt/homebrew/bin/nvim</string>
 			<string>--headless</string>
+			<string>+Lazy! sync</string>
 			<string>+MasonUpdate</string>
 			<string>+MasonToolsUpdateSync</string>
-			<string>+Lazy! sync</string>
 			<string>+qa</string>
 		</array>
 		<key>KeepAlive</key>
