@@ -10,9 +10,7 @@
 			<string>-c</string>
 			<string>
 				for d in $HOME/.tmux/plugins/*; do
-					pushd $d
-					git pull --recurse-submodules
-					popd
+					git -C $d pull --recurse-submodules
 				done
 			</string>
 		</array>
