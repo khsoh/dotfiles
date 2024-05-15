@@ -10,9 +10,14 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 
 tmux () {
-    if [[ -z "$1" && -z "$TMUX" ]]; then
-        command tmux new-session -A
+    if [[ -z "$1" ]]; then
+        if [[ $(command tmux list-session 2>&/dev/null) ]]; then
+            command tmux new-session -A
+        else
+            command tmux new-session
+        fi
     else
         command tmux $@
     fi
 }
+
