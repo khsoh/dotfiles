@@ -1,6 +1,6 @@
 [submodule "tmux"]
-	path = HOME/.config/tmux
+	path = HOME-Darwin/.config/tmux
 	url = https://github.com/khsoh/tmuxconf.git
 [submodule "nvim"]
-	path = HOME/.config/nvim
+	path = HOME-Darwin/.config/nvim
 	url = https://github.com/khsoh/kickstart.nvim.git

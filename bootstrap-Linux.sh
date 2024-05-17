@@ -15,9 +15,6 @@ sudo apt-get install stow
 ./git-remote-init.sh
 
 # Sets up the symlinks with stow
-#. ./dostow.sh
-stow -Rt ~ LINUX 
-ln -sf $PWD/HOME/.config/nvim $HOME/.config
-ln -sf $PWD/HOME/.config/tmux $HOME/.config
+. ./dostow.sh
 
 popd >/dev/null
