@@ -16,7 +16,7 @@ git submodule update --checkout --remote --recursive
 (brew update >/dev/null 2>&1) || (/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
 
 # Installs packages
-brew bundle --file HOME/.Brewfile
+brew bundle --file HOME-Darwin/.Brewfile
 
 # Run brew diagnostics
 brew doctor 2>&1
