@@ -6,7 +6,7 @@
 		<string>com.nvim.update</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/opt/homebrew/bin/nvim</string>
+			<string>nvim</string>
 			<string>--headless</string>
 			<string>+Lazy! sync</string>
 			<string>+MasonUpdate</string>
