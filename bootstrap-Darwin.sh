@@ -3,6 +3,12 @@
 SCRIPTNAME=$(readlink -f ${BASH_SOURCE[0]})
 pushd "$(dirname $SCRIPTNAME)" > /dev/null
 
+if ! nix --version >/dev/null 2>&1; then
+    echo Nix is not installed
+    echo "Execute: sh <(curl -L https://raw.githubusercontent.com/khsoh/mymacnix/main/nix-autoinstall) to install Nix"
+    exit 1
+fi
+
 git pull --recurse-submodules origin main
 git submodule update --checkout --remote --recursive
 
