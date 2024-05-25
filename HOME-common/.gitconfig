@@ -24,3 +24,5 @@
 [includeIf "gitdir:~/github/**"]
 	path = ~/.gitconfig-github
 
+[rerere]
+	enabled = true
