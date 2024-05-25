@@ -15,7 +15,7 @@ export EDITOR=vim
 tmux () {
     if [[ -z "$1" ]]; then
         if [[ $(command tmux list-session 2>&/dev/null) ]]; then
-            command tmux new-session -d
+            command tmux switch-client -t $(command tmux new-session -d -P)
         else
             command tmux new-session -A
         fi
