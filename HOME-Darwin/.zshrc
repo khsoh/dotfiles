@@ -12,9 +12,6 @@ export XDG_DATA_HOME=$HOME/.local/share
 # Use vi mode for editing commandline
 export EDITOR=vim
 
-# prompt pex if available
-prompt pex 2>/dev/null
-
 tmux () {
     if [[ -z "$1" ]]; then
         if [[ $(command tmux list-session 2>&/dev/null) ]]; then
