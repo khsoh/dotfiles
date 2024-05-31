@@ -9,7 +9,7 @@ if ! nix --version >/dev/null 2>&1; then
     exit 1
 fi
 
-git pull --recurse-submodules origin main
+git pull --recurse-submodules origin ${BRANCH:-main}
 git submodule update --checkout --remote --recursive
 
 # Setup the default user email to use for comment in git operations
@@ -18,22 +18,27 @@ git submodule update --checkout --remote --recursive
 # Setup the remote URLs for fetching and pushing from and to remote URL
 ./git-remote-init.sh
 
-## Will update/install Homebrew if not present
-(brew update >/dev/null 2>&1) || (/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
+if [ ${BRANCH:-main} != "feature/nobrew" ]; then
+    ## Will update/install Homebrew if not present
+    (brew update >/dev/null 2>&1) || (/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
 
-# Installs packages
-brew bundle --file HOME-Darwin/.Brewfile
+    # Installs packages
+    brew bundle --file HOME-Darwin/.Brewfile
 
-# Run brew diagnostics
-brew doctor 2>&1
+    # Run brew diagnostics
+    brew doctor 2>&1
 
-# Upgrade the packages
-brew upgrade
+    # Upgrade the packages
+    brew upgrade
+
+fi
 
 # Sets up the symlinks with stow
 . ./dostow.sh
 
-# Start logrotate service
-brew services restart logrotate
+if [ ${BRANCH:-main} != "feature/nobrew" ]; then
+    # Start logrotate service
+    brew services restart logrotate
+fi
 
 popd >/dev/null
