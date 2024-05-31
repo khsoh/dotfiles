@@ -1,6 +1,5 @@
 tap "epk/epk"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "powershell/tap"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
