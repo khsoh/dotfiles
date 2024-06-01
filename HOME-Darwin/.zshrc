@@ -13,6 +13,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export EDITOR=vim
 
 tmux () {
+    [ -x ~/.config/tmux/setup_terminal_font.zsh ] && ~/.config/tmux/setup_terminal_font.zsh
     if [[ -z "$1" ]]; then
         if [[ $(command tmux list-session 2>&/dev/null) ]]; then
             command tmux switch-client -t $(command tmux new-session -d -P)
