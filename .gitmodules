@@ -1,3 +1,0 @@
-[submodule "nvim"]
-	path = HOME-Darwin/.config/nvim
-	url = https://github.com/khsoh/kickstart.nvim.git
