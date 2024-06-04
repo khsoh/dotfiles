@@ -4,7 +4,6 @@ tap "homebrew/services"
 tap "powershell/tap"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 brew "exiftool"
-brew "logrotate", restart_service: true
 brew "ncurses"
 brew "p7zip"
 brew "ripgrep"
