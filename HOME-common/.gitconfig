@@ -19,9 +19,17 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+
 [include]
 	path = ~/.gitconfig-email
-[includeIf "gitdir:~/github/**"]
+
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+	path = ~/.gitconfig-github
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = ~/.gitconfig-github
+
+[includeIf "hasconfig:remote.*.url:https://*@github.com/**"]
 	path = ~/.gitconfig-github
 
 [rerere]
