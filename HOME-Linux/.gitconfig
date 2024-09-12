@@ -1,5 +1,6 @@
 [user]
 	name = K H Soh
+	email = hju37823@outlook.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBUfgkqOXhnONi4FAsFfZFeqW0Bkij6c/6zJf8Il1oCX
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -15,22 +16,13 @@
 	last = log -1 HEAD
 [gpg]
 	format = ssh
-[gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[tag]
+	gpgsign = true
 [commit]
 	gpgsign = true
 
 [include]
 	path = ~/.gitconfig-email
-
-[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
-	path = ~/.gitconfig-github
-
-[includeIf "hasconfig:remote.*.url:https://github.com/**"]
-	path = ~/.gitconfig-github
-
-[includeIf "hasconfig:remote.*.url:https://*@github.com/**"]
-	path = ~/.gitconfig-github
 
 [rerere]
 	enabled = true
